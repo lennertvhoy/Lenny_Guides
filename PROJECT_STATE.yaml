@@ -1,0 +1,57 @@
+---
+# PROJECT_STATE.yaml — Current truth for Lenny_Guides
+
+metadata:
+  updated_at: 2026-07-06T17:00:00+00:00
+  updated_by: agent
+  version: "0.1.0-bootstrap"
+
+workflow:
+  repo_role: documentation_site
+  repo_mode: bootstrap
+
+current_state:
+  site:
+    status: not_built
+    generator: MkDocs
+    theme: Material for MkDocs
+    i18n: planned
+    url: https://lennertvhoy.github.io/Lenny_Guides/
+    custom_domain: false
+
+  content:
+    status: planned
+    languages:
+      en: planned
+      nl: planned
+    first_guide: student-setup
+    guide_topics:
+      - herdr
+      - tailscale
+      - termux
+      - studydd
+      - statedd
+
+  deployment:
+    status: not_deployed
+    host: GitHub Pages
+    workflow: .github/workflows/pages.yml
+    ci_status: not_verified
+
+  quality_gate:
+    status: not_passed
+    local_build: not_verified
+    strict_build: not_verified
+    link_check: not_verified
+
+  repository:
+    path: /home/ff/Documents/Projects/Lenny_Guides
+    branch: main
+    head: unknown
+    worktree_status: unknown
+
+active_problems: []
+
+residual_risks:
+  - GitHub Pages may require enabling in repository settings.
+  - mkdocs-static-i18n config may need tuning for first build.

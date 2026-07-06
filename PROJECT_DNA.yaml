@@ -1,0 +1,41 @@
+---
+# PROJECT_DNA.yaml — Stable architecture contract for Lenny_Guides
+
+project:
+  name: Lenny_Guides
+  type: public_documentation_site
+  purpose: Practical bilingual guides for safe AI-coding-agent workflows
+  canonical_url: https://lennertvhoy.github.io/Lenny_Guides/
+  languages:
+    canonical: en
+    translations:
+      - nl
+
+architecture:
+  generator: MkDocs
+  theme: Material for MkDocs
+  i18n_plugin: mkdocs-static-i18n
+  hosting: GitHub Pages
+  deploy_trigger: push to main
+  content_format: Markdown
+  custom_assets:
+    - docs/assets/css/extra.css
+
+invariants:
+  - Source of truth is the Markdown in docs/.
+  - No backend, database, comments, login, or analytics in MVP.
+  - No custom domain in MVP.
+  - English pages are canonical; Dutch pages are peer translations.
+  - All rendered nav links must resolve.
+  - Build must pass `mkdocs build --strict` before push.
+
+directories:
+  docs: Markdown source content
+  docs/assets/css: Custom styles
+  docs/assets/images: Screenshots and diagrams
+  docs/getting-started: Onboarding guides
+  docs/guides: Topic-specific guides
+  docs/safety: Safety and boundary guidance
+  .github/workflows: CI/CD definitions
+  docs/superpowers/specs: Approved design specs
+  docs/superpowers/plans: Implementation plans
