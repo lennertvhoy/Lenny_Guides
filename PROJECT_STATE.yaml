@@ -1,5 +1,5 @@
 metadata:
-  updated_at: '2026-07-06T18:43:38Z'
+  updated_at: '2026-07-06T19:23:00Z'
   updated_by: agent
   version: 0.1.0-operating
 workflow:
@@ -9,7 +9,7 @@ current_state:
   site:
     status: deployed
     generator: MkDocs
-    theme: Material for MkDocs
+    theme: Material for MkDocs with Catppuccin Mocha + Dracula accents, dark default
     i18n: active
     url: https://lennertvhoy.github.io/Lenny_Guides/
     custom_domain: false
@@ -39,9 +39,9 @@ current_state:
     path: Lenny_Guides
     git_snapshot:
       status: observed
-      captured_at: '2026-07-06T18:43:38Z'
+      captured_at: '2026-07-06T19:23:00Z'
       last_verified_branch: main
-      last_verified_head: 77462e551bc4712e13e384500c4b3e3c705c4faf
+      last_verified_head: de966123d8e9dacdd35acf899e5fd8b0d1f88896
       last_verified_worktree_status: ''
       notes: 'Snapshot taken before cleanup commit. Use git commands for live HEAD.
 

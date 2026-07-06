@@ -41,3 +41,10 @@
 - Added `LICENSE` (MIT).
 - Committed design spec and implementation plan under `docs/superpowers/`.
 - Switched repo mode from `bootstrap` to `operating` in StateDD files.
+
+## 2026-07-06 — Catppuccin + Dracula cozy theme
+
+- Replaced Lenny navy/orange/red palette with Catppuccin Mocha base + Dracula accents.
+- Updated `docs/assets/css/extra.css` with cozy, legible dark colors, rounded corners, and soft shadows.
+- Set dark mode as default in `mkdocs.yml`; kept a light-mode toggle.
+- Verified `mkdocs build --strict` passes and live URLs return HTTP 200.
