@@ -45,10 +45,10 @@ current_state:
     link_check: not_verified
 
   repository:
-    path: /home/ff/Documents/Projects/Lenny_Guides
+    path: Lenny_Guides
     branch: main
-    head: unknown
-    worktree_status: unknown
+    head: 69e140ac7f7df5b96764dbd53adada00292db3ed
+    worktree_status: "?? docs/"
 
 active_problems: []
 
