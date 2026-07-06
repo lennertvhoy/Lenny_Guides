@@ -46,9 +46,15 @@ current_state:
 
   repository:
     path: Lenny_Guides
-    branch: main
-    head: 69e140ac7f7df5b96764dbd53adada00292db3ed
-    worktree_status: "?? docs/"
+    git_snapshot:
+      status: observed
+      captured_at: 2026-07-06T17:00:00+00:00
+      last_verified_branch: main
+      last_verified_head: 2b8fd9f9861209c57bde8b4aa0a44f216c34eb0d
+      last_verified_worktree_status: "?? docs/"
+      notes: |
+        Snapshot taken during MVP bootstrap. Use git, scripts/statedd_audit.py,
+        or scripts/statedd_doctor.py for live branch, HEAD, and worktree status.
 
 active_problems: []
 
