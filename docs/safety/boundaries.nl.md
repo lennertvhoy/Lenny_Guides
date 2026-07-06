@@ -6,7 +6,7 @@ Een coding agent is een snelle junior collega in je terminal. Die heeft context,
 
 - **Repo eerst.** De Git-repo is de bron van waarheid. Herdr, StudyDD en StateDD organiseren werk alleen rondom de repo.
 - **Eerst plannen, dan bouwen.** Voor elk niet-triviale taak stelt de agent een plan voor voordat hij bestanden wijzigt.
-- **Bewijs vóór closure.** Een taak is niet af omdat de agent dat zegt. Je hebt tests, screenshots, logs of een clean diff nodig.
+- **Bewijs vóór oplevering.** Een taak is niet af omdat de agent dat zegt. Je hebt tests, screenshots, logs of een clean diff nodig.
 - **Geen secrets in chat of Git.** API-keys, tokens en wachtwoorden horen niet in prompts, screenshots of commits.
 - **Eén taak tegelijk.** Parallelle agents alleen als ze niet dezelfde bestanden of beslissingen aanraken.
 - **De mens blijft reviewer.** De agent stelt voor; jij accepteert of wijst af.
@@ -33,7 +33,7 @@ Een coding agent is een snelle junior collega in je terminal. Die heeft context,
 - Gebruik kleine branches
 - Lees git diff voor het committen
 - Behandel agent-uitvoer als een voorstel, niet als waarheid
-- Vraag om bewijs vóór closure
+- Vraag om bewijs vóór oplevering
 ```
 
 ## Voorbeeld .gitignore
@@ -49,11 +49,11 @@ node_modules/
 .venv/
 ```
 
-## gsm versus laptop
+## Telefoon versus laptop
 
-- **gsm:** geschikt voor status bekijken, korte goedkeuringen en handoffs lezen.
+- **Telefoon:** geschikt voor status bekijken, korte goedkeuringen en handoffs lezen.
 - **Laptop:** vereist voor grote diffs, mergeconflicten, beveiligingsbeslissingen en complexe refactors.
 
 ## Onthoud
 
-Repo eerst. Eerst plannen. Bewijs vóór closure.
+Repo eerst. Eerst plannen. Bewijs vóór oplevering.
