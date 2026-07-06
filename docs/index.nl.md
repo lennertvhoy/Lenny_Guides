@@ -1,6 +1,6 @@
 # Lenny Guides
 
-Praktische, opinievolle gidsen voor het veilig en effectief gebruiken van AI-coding-agents.
+Praktische, opinievolle gidsen voor het veilig en effectief gebruiken van AI-coding agents.
 
 ## Wat is dit?
 
