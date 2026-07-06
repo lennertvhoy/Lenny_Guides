@@ -48,15 +48,14 @@ current_state:
     path: Lenny_Guides
     git_snapshot:
       status: observed
-      captured_at: 2026-07-06T18:21:38+00:00
+      captured_at: 2026-07-06T18:24:56+00:00
       last_verified_branch: main
-      last_verified_head: 10fa3b8a0449a9d30ab1b8add9a7665e026f2c35
+      last_verified_head: e457741f894e5b06e587dab642d64fe58c1e6c86
       last_verified_worktree_status: |
         ?? docs/superpowers/
         ?? site/
       notes: |
-        Snapshot taken after local build verification. Use git, scripts/statedd_audit.py,
-        or scripts/statedd_doctor.py for live branch, HEAD, and worktree status.
+        Snapshot taken during MVP bootstrap. Use git commands for live state.
 
 active_problems: []
 
