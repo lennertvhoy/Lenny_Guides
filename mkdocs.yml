@@ -1,0 +1,87 @@
+site_name: Lenny Guides
+site_description: Practical guides for safe, effective AI-coding-agent workflows.
+site_url: https://lennertvhoy.github.io/Lenny_Guides/
+repo_url: https://github.com/lennertvhoy/Lenny_Guides
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  font:
+    text: Open Sans
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+extra_css:
+  - assets/css/extra.css
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: nl
+          name: Nederlands
+          build: true
+      navigation:
+        - Home: index.md
+        - Getting Started:
+            - Student Setup: getting-started/student-setup.md
+        - Guides:
+            - Herdr: guides/herdr.md
+            - Tailscale: guides/tailscale.md
+            - Termux: guides/termux.md
+            - StudyDD: guides/studydd.md
+            - StateDD: guides/statedd.md
+        - Safety:
+            - Boundaries: safety/boundaries.md
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Student Setup: getting-started/student-setup.md
+  - Guides:
+      - Herdr: guides/herdr.md
+      - Tailscale: guides/tailscale.md
+      - Termux: guides/termux.md
+      - StudyDD: guides/studydd.md
+      - StateDD: guides/statedd.md
+  - Safety:
+      - Boundaries: safety/boundaries.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/lennertvhoy/Lenny_Guides
