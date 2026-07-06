@@ -1,6 +1,6 @@
 # Herdr
 
-Herdr is een terminal multiplexer ontworpen voor programmeeragents. Hij houdt vensters en agents actief bij verbroken verbindingen.
+Herdr is een terminal multiplexer ontworpen voor coding agents. Hij houdt panelen en agents actief bij verbroken verbindingen.
 
 ## Wat Herdr doet
 

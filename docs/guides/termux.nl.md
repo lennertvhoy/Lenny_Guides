@@ -27,7 +27,7 @@ pkg install -y openssh git nano
 
 ## Veelgemaakte fouten
 
-- Een verouderde Termux-versie gebruiken uit een verouderde appstore
+- Een verouderde Termux-versie gebruiken uit een verouderde app store
 - Complexe commando's typen op een virtueel toetsenbord
 
 ## Volgende stap
