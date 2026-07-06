@@ -1,10 +1,10 @@
 # Lenny Guides
 
-Praktische, opinievolle gidsen voor het veilig en effectief gebruiken van AI-coding agents.
+Praktische, opinievolle gidsen voor het veilig en effectief gebruiken van AI coding agents.
 
 ## Wat is dit?
 
-Lenny Guides is een publieke kennisbank voor studenten, leerkrachten en solobouwers die met AI-coding agents willen werken zonder controle te verliezen over hun projecten, geheimen of gezond verstand.
+Lenny Guides is een publieke kennisbank voor studenten, leerkrachten en solobouwers die met AI coding agents willen werken zonder controle te verliezen over hun projecten, geheimen of gezond verstand.
 
 Elke gids legt uit **waarom** een stap belangrijk is, niet alleen **wat** je moet typen. We verkiezen veilige standaarden, duidelijke grenzen en eerlijke beperkingen boven hype.
 
