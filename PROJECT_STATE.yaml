@@ -2,13 +2,13 @@
 # PROJECT_STATE.yaml — Current truth for Lenny_Guides
 
 metadata:
-  updated_at: 2026-07-06T18:36:59+00:00
+  updated_at: 2026-07-06T18:40:00+00:00
   updated_by: agent
-  version: "0.1.0-bootstrap"
+  version: "0.1.0-operating"
 
 workflow:
   repo_role: documentation_site
-  repo_mode: bootstrap
+  repo_mode: operating
 
 current_state:
   site:
@@ -48,15 +48,14 @@ current_state:
     path: Lenny_Guides
     git_snapshot:
       status: observed
-      captured_at: 2026-07-06T18:36:59Z
+      captured_at: 2026-07-06T18:40:00Z
       last_verified_branch: main
-      last_verified_head: 888bcf96be390dcde859da256c390b45023fb7b9
+      last_verified_head: 9c248a0ba61c025399cdb730de1213119eb4554c
       last_verified_worktree_status: |
         ?? docs/superpowers/
         ?? site/
       notes: |
-        Snapshot captured after successful GitHub Pages deployment.
-        Workflow run: https://github.com/lennertvhoy/Lenny_Guides/actions/runs/28814297865
+        Snapshot taken before cleanup commit. Use git commands for live HEAD.
         Live URLs return HTTP 200 for EN and NL.
 
 active_problems: []

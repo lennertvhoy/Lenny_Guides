@@ -33,3 +33,11 @@
   - https://lennertvhoy.github.io/Lenny_Guides/
   - https://lennertvhoy.github.io/Lenny_Guides/nl/
 - Updated StateDD files: `PROJECT_STATE.yaml`, `STATUS.md`, `NEXT_ACTIONS.md`, `WORKLOG.md`.
+
+## 2026-07-06 — Repo cleanup and public readiness
+
+- Added `README.md` with live site URL and local development instructions.
+- Added `.gitignore` to exclude `site/`, `.venv/`, editor files, and secrets.
+- Added `LICENSE` (MIT).
+- Committed design spec and implementation plan under `docs/superpowers/`.
+- Switched repo mode from `bootstrap` to `operating` in StateDD files.

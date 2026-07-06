@@ -1,7 +1,7 @@
 # Lenny_Guides Status
 
-**Updated At:** 2026-07-06T18:32:59Z
-**Mode:** bootstrap
+**Updated At:** 2026-07-06T18:40:00Z
+**Mode:** operating
 **Goal:** Public bilingual guides site on GitHub Pages.
 
 ## Snapshot

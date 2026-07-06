@@ -1,6 +1,6 @@
 ---
 repo_role: documentation_site
-repo_mode: bootstrap
+repo_mode: operating
 initialized_on: 2026-07-06
 ---
 
@@ -25,4 +25,4 @@ initialized_on: 2026-07-06
 - End each session with a handoff: changed files, build result, known limits, next action.
 
 ## Current Mode
-`bootstrap` until the first GitHub Pages deployment is verified.
+`operating` — the site is deployed and the first guide is live.
