@@ -55,18 +55,6 @@ plugins:
         - locale: nl
           name: Nederlands
           build: true
-      navigation:
-        - Home: index.md
-        - Getting Started:
-            - Student Setup: getting-started/student-setup.md
-        - Guides:
-            - Herdr: guides/herdr.md
-            - Tailscale: guides/tailscale.md
-            - Termux: guides/termux.md
-            - StudyDD: guides/studydd.md
-            - StateDD: guides/statedd.md
-        - Safety:
-            - Boundaries: safety/boundaries.md
 
 nav:
   - Home: index.md
