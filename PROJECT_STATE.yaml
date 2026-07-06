@@ -48,14 +48,14 @@ current_state:
     path: Lenny_Guides
     git_snapshot:
       status: observed
-      captured_at: 2026-07-06T18:24:56+00:00
+      captured_at: 2026-07-06T18:26:35Z
       last_verified_branch: main
-      last_verified_head: e457741f894e5b06e587dab642d64fe58c1e6c86
+      last_verified_head: a5d7630419957616bf8b7b0c690bc3e4d7bb59ab
       last_verified_worktree_status: |
         ?? docs/superpowers/
         ?? site/
       notes: |
-        Snapshot taken during MVP bootstrap. Use git commands for live state.
+        Snapshot captured before deployment. Live state should always be fetched from git.
 
 active_problems: []
 
