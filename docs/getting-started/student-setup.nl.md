@@ -214,7 +214,7 @@ Bewijs dat je een agentworkflow veilig kan starten en afsluiten:
 
 ## Wat nu?
 
-- Lees de gidsen over [Herdr](../guides/herdr.nl.md), [Tailscale](../guides/tailscale.nl.md) en [Termux](../guides/termux.nl.md) voor meer opstelhulp.
+- Lees de gidsen over [Herdr](../guides/herdr.nl.md), [Tailscale](../guides/tailscale.nl.md) en [Termux](../guides/termux.nl.md) voor meer installatiehulp.
 - Lees [StudyDD](../guides/studydd.nl.md) voor repo-first leren.
 - Lees [StateDD](../guides/statedd.nl.md) voor repo-first projectwerk.
-- Lees [Safety Boundaries](../safety/boundaries.nl.md) voordat je een agent aan echte code laat werken.
+- Lees [Veiligheidsgrenzen](../safety/boundaries.nl.md) voordat je een agent aan echte code laat werken.

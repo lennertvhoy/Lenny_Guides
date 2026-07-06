@@ -32,6 +32,12 @@ sudo apt install -y git openssh-server curl
 sudo systemctl enable --now ssh || true
 ```
 
+!!! tip "WSL without systemd"
+    If `systemctl` is not available in your WSL distribution, start the SSH service with:
+    ```bash
+    sudo service ssh start
+    ```
+
 ### Fedora
 
 ```bash
