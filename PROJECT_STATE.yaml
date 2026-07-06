@@ -1,15 +1,10 @@
----
-# PROJECT_STATE.yaml — Current truth for Lenny_Guides
-
 metadata:
-  updated_at: 2026-07-06T18:40:00+00:00
+  updated_at: '2026-07-06T18:43:38Z'
   updated_by: agent
-  version: "0.1.0-operating"
-
+  version: 0.1.0-operating
 workflow:
   repo_role: documentation_site
   repo_mode: operating
-
 current_state:
   site:
     status: deployed
@@ -18,7 +13,6 @@ current_state:
     i18n: active
     url: https://lennertvhoy.github.io/Lenny_Guides/
     custom_domain: false
-
   content:
     status: draft
     languages:
@@ -26,40 +20,35 @@ current_state:
       nl: draft
     first_guide: student-setup
     guide_topics:
-      - herdr
-      - tailscale
-      - termux
-      - studydd
-      - statedd
-
+    - herdr
+    - tailscale
+    - termux
+    - studydd
+    - statedd
   deployment:
     status: deployed
     host: GitHub Pages
     workflow: .github/workflows/pages.yml
     ci_status: verified
-
   quality_gate:
     status: passed
     local_build: verified
     strict_build: verified
     link_check: verified
-
   repository:
     path: Lenny_Guides
     git_snapshot:
       status: observed
-      captured_at: 2026-07-06T18:40:00Z
+      captured_at: '2026-07-06T18:43:38Z'
       last_verified_branch: main
-      last_verified_head: 9c248a0ba61c025399cdb730de1213119eb4554c
-      last_verified_worktree_status: |
-        ?? docs/superpowers/
-        ?? site/
-      notes: |
-        Snapshot taken before cleanup commit. Use git commands for live HEAD.
+      last_verified_head: 77462e551bc4712e13e384500c4b3e3c705c4faf
+      last_verified_worktree_status: ''
+      notes: 'Snapshot taken before cleanup commit. Use git commands for live HEAD.
+
         Live URLs return HTTP 200 for EN and NL.
 
+        '
 active_problems: []
-
 residual_risks:
-  - Content is still draft quality and needs review before public promotion.
-  - Future i18n edge cases (URL redirects, language switcher) may need tuning.
+- Content is still draft quality and needs review before public promotion.
+- Future i18n edge cases (URL redirects, language switcher) may need tuning.
