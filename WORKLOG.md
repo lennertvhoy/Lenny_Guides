@@ -19,3 +19,17 @@
 - Confirmed English output under `site/` and Dutch output under `site/nl/`.
 - Confirmed no placeholder TODO/TBD/FIXME/"coming soon" in authored rendered content.
 - Updated StateDD files: `PROJECT_STATE.yaml`, `STATUS.md`, `NEXT_ACTIONS.md`, `WORKLOG.md`.
+
+## 2026-07-06 — Push and confirm Pages deployment
+
+- Pushed local `main` to `origin/main` (HEAD `273173879215a3b69ba243dcda5fd91de6268cf2`).
+- Enabled GitHub Pages via the GitHub API:
+  - Initial POST with `source[branch]=main`/`source[path]=/` returned 404 (site not yet enabled).
+  - Created Pages site via `POST /repos/lennertvhoy/Lenny_Guides/pages` with nested source fields.
+  - Switched source to GitHub Actions via `PUT /repos/lennertvhoy/Lenny_Guides/pages` with `build_type=workflow`.
+- First workflow run (`28814097934`) failed to create Pages deployment because Pages source was still legacy; after switching to `workflow` source and re-running, deployment succeeded.
+- Verified workflow run `28814297865` completed successfully.
+- Verified live URLs return HTTP 200:
+  - https://lennertvhoy.github.io/Lenny_Guides/
+  - https://lennertvhoy.github.io/Lenny_Guides/nl/
+- Updated StateDD files: `PROJECT_STATE.yaml`, `STATUS.md`, `NEXT_ACTIONS.md`, `WORKLOG.md`.

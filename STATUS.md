@@ -1,31 +1,35 @@
 # Lenny_Guides Status
 
-**Updated At:** 2026-07-06
+**Updated At:** 2026-07-06T18:32:59Z
 **Mode:** bootstrap
 **Goal:** Public bilingual guides site on GitHub Pages.
 
 ## Snapshot
 
+- GitHub Pages is enabled with source set to GitHub Actions.
+- Latest `Deploy Lenny Guides to GitHub Pages` workflow run completed successfully.
+- Live site returns HTTP 200:
+  - EN: https://lennertvhoy.github.io/Lenny_Guides/
+  - NL: https://lennertvhoy.github.io/Lenny_Guides/nl/
 - Local build verified: `mkdocs build --strict` exits 0 with no warnings.
 - Site skeleton, landing pages, student-setup guide, safety page, and guide stubs are in `docs/`.
 - English and Dutch versions are generated under `site/` and `site/nl/`.
-- GitHub Actions deploy workflow (`.github/workflows/pages.yml`) is ready.
-- Deployment to GitHub Pages is the remaining step.
 
 ## Product Truth
 
-- No published site yet.
+- Site is published at https://lennertvhoy.github.io/Lenny_Guides/.
 - First guide: student setup for Herdr, Tailscale, Termux, StudyDD, StateDD.
 
 ## Runtime Truth
 
 - No application runtime. Build verification is local `mkdocs build --strict`.
+- Deployment is handled by GitHub Actions (`.github/workflows/pages.yml`).
 
 ## Current Quality Gate
 
 - Local build passed (`--strict`, exit 0).
 - No placeholders in authored rendered content.
-- Ready to push and confirm Pages deployment.
+- GitHub Actions workflow passing; live URLs return HTTP 200.
 
 ## Open Blockers
 
@@ -33,4 +37,4 @@
 
 ## Immediate Priorities
 
-1. Push and confirm Pages deployment.
+1. Review and improve student-setup guide content quality (LG-CONTENT-002).

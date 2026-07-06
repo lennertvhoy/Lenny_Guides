@@ -2,7 +2,7 @@
 # PROJECT_STATE.yaml — Current truth for Lenny_Guides
 
 metadata:
-  updated_at: 2026-07-06T18:21:38+00:00
+  updated_at: 2026-07-06T18:32:59+00:00
   updated_by: agent
   version: "0.1.0-bootstrap"
 
@@ -12,10 +12,10 @@ workflow:
 
 current_state:
   site:
-    status: built_locally
+    status: deployed
     generator: MkDocs
     theme: Material for MkDocs
-    i18n: planned
+    i18n: active
     url: https://lennertvhoy.github.io/Lenny_Guides/
     custom_domain: false
 
@@ -33,13 +33,13 @@ current_state:
       - statedd
 
   deployment:
-    status: not_deployed
+    status: deployed
     host: GitHub Pages
     workflow: .github/workflows/pages.yml
-    ci_status: not_verified
+    ci_status: verified
 
   quality_gate:
-    status: passed_locally
+    status: passed
     local_build: verified
     strict_build: verified
     link_check: verified
@@ -48,17 +48,19 @@ current_state:
     path: Lenny_Guides
     git_snapshot:
       status: observed
-      captured_at: 2026-07-06T18:26:35Z
+      captured_at: 2026-07-06T18:32:59Z
       last_verified_branch: main
-      last_verified_head: a5d7630419957616bf8b7b0c690bc3e4d7bb59ab
+      last_verified_head: 273173879215a3b69ba243dcda5fd91de6268cf2
       last_verified_worktree_status: |
         ?? docs/superpowers/
         ?? site/
       notes: |
-        Snapshot captured before deployment. Live state should always be fetched from git.
+        Snapshot captured after successful GitHub Pages deployment.
+        Workflow run: https://github.com/lennertvhoy/Lenny_Guides/actions/runs/28814297865
+        Live URLs return HTTP 200 for EN and NL.
 
 active_problems: []
 
 residual_risks:
-  - GitHub Pages may require enabling in repository settings.
-  - mkdocs-static-i18n config may need tuning for first build.
+  - Content is still draft quality and needs review before public promotion.
+  - Future i18n edge cases (URL redirects, language switcher) may need tuning.
