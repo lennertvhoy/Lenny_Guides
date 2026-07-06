@@ -2,7 +2,7 @@
 # PROJECT_STATE.yaml — Current truth for Lenny_Guides
 
 metadata:
-  updated_at: 2026-07-06T17:00:00+00:00
+  updated_at: 2026-07-06T18:21:38+00:00
   updated_by: agent
   version: "0.1.0-bootstrap"
 
@@ -12,7 +12,7 @@ workflow:
 
 current_state:
   site:
-    status: not_built
+    status: built_locally
     generator: MkDocs
     theme: Material for MkDocs
     i18n: planned
@@ -20,10 +20,10 @@ current_state:
     custom_domain: false
 
   content:
-    status: planned
+    status: draft
     languages:
-      en: planned
-      nl: planned
+      en: draft
+      nl: draft
     first_guide: student-setup
     guide_topics:
       - herdr
@@ -39,21 +39,23 @@ current_state:
     ci_status: not_verified
 
   quality_gate:
-    status: not_passed
-    local_build: not_verified
-    strict_build: not_verified
-    link_check: not_verified
+    status: passed_locally
+    local_build: verified
+    strict_build: verified
+    link_check: verified
 
   repository:
     path: Lenny_Guides
     git_snapshot:
       status: observed
-      captured_at: 2026-07-06T17:00:00+00:00
+      captured_at: 2026-07-06T18:21:38+00:00
       last_verified_branch: main
-      last_verified_head: 2b8fd9f9861209c57bde8b4aa0a44f216c34eb0d
-      last_verified_worktree_status: "?? docs/"
+      last_verified_head: 10fa3b8a0449a9d30ab1b8add9a7665e026f2c35
+      last_verified_worktree_status: |
+        ?? docs/superpowers/
+        ?? site/
       notes: |
-        Snapshot taken during MVP bootstrap. Use git, scripts/statedd_audit.py,
+        Snapshot taken after local build verification. Use git, scripts/statedd_audit.py,
         or scripts/statedd_doctor.py for live branch, HEAD, and worktree status.
 
 active_problems: []

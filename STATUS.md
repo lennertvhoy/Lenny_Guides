@@ -6,10 +6,11 @@
 
 ## Snapshot
 
-- Empty repo initialized on `main`.
-- Design spec approved: MkDocs Material, GitHub Pages, English + Dutch.
-- Implementation plan exists at `docs/superpowers/plans/2026-07-06-lenny-guides-mvp-plan.md`.
-- No deployment yet.
+- Local build verified: `mkdocs build --strict` exits 0 with no warnings.
+- Site skeleton, landing pages, student-setup guide, safety page, and guide stubs are in `docs/`.
+- English and Dutch versions are generated under `site/` and `site/nl/`.
+- GitHub Actions deploy workflow (`.github/workflows/pages.yml`) is ready.
+- Deployment to GitHub Pages is the remaining step.
 
 ## Product Truth
 
@@ -22,7 +23,9 @@
 
 ## Current Quality Gate
 
-- Not yet passing; build is unverified.
+- Local build passed (`--strict`, exit 0).
+- No placeholders in authored rendered content.
+- Ready to push and confirm Pages deployment.
 
 ## Open Blockers
 
@@ -30,8 +33,4 @@
 
 ## Immediate Priorities
 
-1. Add MkDocs Material skeleton.
-2. Add bilingual landing pages and first guide.
-3. Add GitHub Actions deploy workflow.
-4. Verify local build.
-5. Push and confirm Pages deployment.
+1. Push and confirm Pages deployment.
