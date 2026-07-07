@@ -1,5 +1,5 @@
 metadata:
-  updated_at: '2026-07-06T19:23:00Z'
+  updated_at: '2026-07-06T20:48:10Z'
   updated_by: agent
   version: 0.1.0-operating
 workflow:
@@ -14,11 +14,12 @@ current_state:
     url: https://lennertvhoy.github.io/Lenny_Guides/
     custom_domain: false
   content:
-    status: draft
+    status: topic_guides_rewritten
     languages:
-      en: draft
-      nl: draft
+      en: topic_guides_rewritten
+      nl: topic_guides_rewritten
     first_guide: student-setup
+    notes: Topic guides (Herdr, Tailscale, Termux, StudyDD, StateDD) and safety/boundaries page rewritten to full depth with troubleshooting tables.
     guide_topics:
     - herdr
     - tailscale
@@ -50,5 +51,5 @@ current_state:
         '
 active_problems: []
 residual_risks:
-- Content is still draft quality and needs review before public promotion.
+- Content has been promoted from draft to topic_guides_rewritten; final visual polish (screenshots) remains.
 - Future i18n edge cases (URL redirects, language switcher) may need tuning.

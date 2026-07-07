@@ -14,10 +14,11 @@ Build and publish the first version of Lenny_Guides.
 ## LG-POST — After MVP
 
 - LG-CUSTOM-001 Custom domain support (only if default URL is not enough)
-- LG-CONTENT-002 Add polished screenshots to student setup guide
+- ~~LG-CONTENT-002~~ Student-setup guide content quality rewrite (done)
+- LG-CONTENT-002-post-rewrite Add polished screenshots to student setup guide
 - LG-CONTENT-003 Printable student checklist
 - LG-CONTENT-004 Trainer-mode annotations
-- LG-CONTENT-005 Herdr-specific troubleshooting expansion
-- LG-CONTENT-006 Termux Android troubleshooting expansion
-- LG-CONTENT-007 Safe AI-agent workflow examples
+- ~~LG-CONTENT-005~~ Herdr-specific troubleshooting expansion (done)
+- ~~LG-CONTENT-006~~ Termux Android troubleshooting expansion (done)
+- ~~LG-CONTENT-007~~ Safe AI-agent workflow examples (done)
 - LG-CONTENT-008 StateDD template download/setup path

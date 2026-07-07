@@ -14,11 +14,11 @@ Each guide explains **why** a step matters, not just **what** to type. We prefer
 
 ## Browse guides
 
-- [Herdr](./guides/herdr.md) — terminal workspace for coding agents
-- [Tailscale](./guides/tailscale.md) — private device network
-- [Termux](./guides/termux.md) — terminal on Android
-- [StudyDD](./guides/studydd.md) — repo-first learning workflow
-- [StateDD](./guides/statedd.md) — repo-first project workflow
+- [Herdr](./guides/herdr.md) — persistent terminal workspace for agents. Start here if you want long-running agent sessions.
+- [Tailscale](./guides/tailscale.md) — private mesh network. Start here if you want your phone to reach your host safely.
+- [Termux](./guides/termux.md) — terminal on Android. Start here if you want SSH and Git on your phone.
+- [StudyDD](./guides/studydd.md) — repo-first learning workflow. Start here if you are using an AI tutor to learn a topic.
+- [StateDD](./guides/statedd.md) — repo-first project workflow. Start here if an AI agent is writing code for your project.
 
 ## Safety first
 

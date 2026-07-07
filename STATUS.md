@@ -1,6 +1,6 @@
 # Lenny_Guides Status
 
-**Updated At:** 2026-07-06T18:45:00Z
+**Updated At:** 2026-07-06T20:48:10Z
 **Mode:** operating
 **Goal:** Public bilingual guides site on GitHub Pages.
 
@@ -14,6 +14,7 @@
 - Local build verified: `mkdocs build --strict` exits 0 with no warnings.
 - Site skeleton, landing pages, student-setup guide, safety page, and guide stubs are in `docs/`.
 - English and Dutch versions are generated under `site/` and `site/nl/`.
+- Topic guides (Herdr, Tailscale, Termux, StudyDD, StateDD) and the safety boundaries page have been rewritten to full depth with troubleshooting tables.
 - Theme: cozy Catppuccin Mocha base with Dracula accents; dark mode by default.
 
 ## Product Truth
@@ -38,4 +39,4 @@
 
 ## Immediate Priorities
 
-1. Review and improve student-setup guide content quality (LG-CONTENT-002).
+1. Add polished screenshots to the student setup guide (LG-CONTENT-002-post-rewrite).
