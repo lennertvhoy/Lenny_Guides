@@ -2,6 +2,10 @@
 
 Public bilingual guides for safe, effective AI-coding-agent workflows.
 
+Current public terminology uses **Stateware**, **State-Centric Engineering**,
+**StateSpec**, and **StudyState**. Existing guide URLs keep their legacy paths
+so bookmarks continue to work.
+
 **Live site:** https://lennertvhoy.github.io/Lenny_Guides/
 
 ## What is this?
@@ -12,7 +16,7 @@ Each guide explains **why** a step matters, not just **what** to type. English i
 
 ## Start here
 
-- [Student setup](https://lennertvhoy.github.io/Lenny_Guides/getting-started/student-setup/) — Build a safe, mobile-friendly workspace with Herdr, Tailscale, Termux, StudyDD, and StateDD.
+- [Student setup](https://lennertvhoy.github.io/Lenny_Guides/getting-started/student-setup/) — Build a safe, mobile-friendly workspace with Herdr, Tailscale, Termux, StudyState, and StateSpec.
 
 ## Repository structure
 
@@ -20,7 +24,8 @@ Each guide explains **why** a step matters, not just **what** to type. English i
 - `mkdocs.yml` — Site configuration.
 - `requirements.txt` — Pinned Python dependencies.
 - `.github/workflows/pages.yml` — GitHub Actions deploy pipeline.
-- StateDD files (`AGENTS.md`, `STATUS.md`, `PROJECT_STATE.yaml`, etc.) — Repo-first project governance.
+- StateSpec files (`AGENTS.md`, `STATUS.md`, `PROJECT_STATE.yaml`, etc.) — Repo-first project governance.
+- [Naming and compatibility](https://lennertvhoy.github.io/Lenny_Guides/guides/naming/) — the category, method, specification, and legacy aliases.
 
 ## Local development
 

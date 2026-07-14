@@ -8,7 +8,7 @@ Build a safe, mobile-friendly workspace for learning and building with AI coding
 - A private Tailscale network so your phone can reach your host without public port forwarding.
 - Herdr as a persistent terminal workspace for coding agents.
 - Termux on Android as a mobile SSH client.
-- StudyDD and StateDD workflows to keep learning and project state in the repo.
+- StudyState and StateSpec workflows to keep learning and project state in the repo.
 
 ## Before you start
 
@@ -187,7 +187,7 @@ You now see the same Herdr workspace as on your laptop.
 !!! tip "Use your phone for short tasks only"
     Good for checking if an agent is blocked, giving quick approval, or reading a handoff. Large diffs, merges, and security decisions belong on a laptop.
 
-## 8. Add StudyDD and StateDD to your repo
+## 8. Add StudyState and StateSpec to your repo
 
 Create the minimal file set in your project root:
 
@@ -221,6 +221,6 @@ Prove you can start and close an agent workflow safely:
 ## What to do next
 
 - Read the [Herdr](../guides/herdr.md), [Tailscale](../guides/tailscale.md), and [Termux](../guides/termux.md) guides for deeper setup help.
-- Read [StudyDD](../guides/studydd.md) for repo-first learning.
-- Read [StateDD](../guides/statedd.md) for repo-first project work.
+- Read [StudyState](../guides/studydd.md) for repo-first learning.
+- Read [StateSpec](../guides/statedd.md) for repo-first project work.
 - Read [Safety Boundaries](../safety/boundaries.md) before letting an agent touch real code.

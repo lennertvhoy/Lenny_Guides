@@ -1,5 +1,5 @@
 metadata:
-  updated_at: '2026-07-06T20:48:10Z'
+  updated_at: '2026-07-14T00:00:00Z'
   updated_by: agent
   version: 0.1.0-operating
 workflow:
@@ -19,13 +19,19 @@ current_state:
       en: topic_guides_rewritten
       nl: topic_guides_rewritten
     first_guide: student-setup
-    notes: Topic guides (Herdr, Tailscale, Termux, StudyDD, StateDD) and safety/boundaries page rewritten to full depth with troubleshooting tables.
+    notes: Topic guides (Herdr, Tailscale, Termux, StudyState, StateSpec) and safety/boundaries page rewritten to full depth with troubleshooting tables.
     guide_topics:
     - herdr
     - tailscale
     - termux
     - studydd
     - statedd
+    public_naming:
+      category: Stateware
+      method: State-Centric Engineering
+      specification: StateSpec
+      study_application: StudyState
+      legacy_route_aliases_retained: true
   deployment:
     status: deployed
     host: GitHub Pages

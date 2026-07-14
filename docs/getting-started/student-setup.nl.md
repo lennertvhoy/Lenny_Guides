@@ -8,7 +8,7 @@ Bouw een veilige, mobielvriendelijke werkruimte om te leren en te bouwen met AI-
 - Een privé Tailscale-netwerk, zodat je telefoon je host kan bereiken zonder publieke port forwarding.
 - Herdr als blijvende terminalwerkruimte voor codingagents.
 - Termux op Android als mobiele SSH-client.
-- StudyDD- en StateDD-workflows om leren en projectstatus in de repo te houden.
+- StudyState- en StateSpec-workflows om leren en projectstatus in de repo te houden.
 
 ## Voordat je begint
 
@@ -187,7 +187,7 @@ Je ziet nu dezelfde Herdr-werkruimte als op je laptop.
 !!! tip "Gebruik je telefoon alleen voor korte taken"
     Handig om te controleren of een agent vastzit, een snelle goedkeuring te geven of een handoff te lezen. Grote diffs, merges en beveiligingsbeslissingen horen op een laptop.
 
-## 8. Voeg StudyDD en StateDD toe aan je repo
+## 8. Voeg StudyState en StateSpec toe aan je repo
 
 Maak de minimale bestandsset in je projectroot:
 
@@ -221,6 +221,6 @@ Bewijs dat je een agentworkflow veilig kan starten en afsluiten:
 ## Wat nu?
 
 - Lees de gidsen over [Herdr](../guides/herdr.nl.md), [Tailscale](../guides/tailscale.nl.md) en [Termux](../guides/termux.nl.md) voor meer installatiehulp.
-- Lees [StudyDD](../guides/studydd.nl.md) voor repo-first leren.
-- Lees [StateDD](../guides/statedd.nl.md) voor repo-first projectwerk.
+- Lees [StudyState](../guides/studydd.nl.md) voor repo-first leren.
+- Lees [StateSpec](../guides/statedd.nl.md) voor repo-first projectwerk.
 - Lees [Veiligheidsgrenzen](../safety/boundaries.nl.md) voordat je een agent aan echte code laat werken.

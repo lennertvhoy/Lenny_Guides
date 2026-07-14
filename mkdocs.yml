@@ -55,8 +55,9 @@ nav:
       - Herdr: guides/herdr.md
       - Tailscale: guides/tailscale.md
       - Termux: guides/termux.md
-      - StudyDD: guides/studydd.md
-      - StateDD: guides/statedd.md
+      - StudyState: guides/studydd.md
+      - StateSpec: guides/statedd.md
+      - Stateware naming: guides/naming.md
   - Safety:
       - Boundaries: safety/boundaries.md
 

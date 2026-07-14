@@ -48,3 +48,12 @@
 - Updated `docs/assets/css/extra.css` with cozy, legible dark colors, rounded corners, and soft shadows.
 - Set dark mode as default in `mkdocs.yml`; kept a light-mode toggle.
 - Verified `mkdocs build --strict` passes and live URLs return HTTP 200.
+
+## 2026-07-14 — Stateware public naming compatibility
+
+- Updated current English and Dutch public content to Stateware,
+  State-Centric Engineering, StateSpec, StudyState, and ClassState.
+- Added a bilingual naming guide and retained existing `studydd` and `statedd`
+  route filenames as compatibility URLs.
+- Preserved plans, worklog history, repository names, package/schema identifiers,
+  and external URLs rather than rewriting historical or machine contracts.

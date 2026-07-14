@@ -288,4 +288,4 @@ Use your phone for quick checks and small approvals. Do installs, large reviews,
 ## What to read next
 
 - [Herdr guide](../guides/herdr.md) — keep agent sessions running on `studybox` and reattach from `student-phone` safely.
-- [StateDD guide](../guides/statedd.md) — keep plans, status, and evidence inside the repo so the agent always starts from the truth.
+- [StateSpec guide](../guides/statedd.md) — keep plans, status, and evidence inside the repo so the agent always starts from the truth.

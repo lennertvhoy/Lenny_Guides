@@ -1,12 +1,24 @@
-# StateDD
+# StateSpec
+
+> **Naamgeving:** StateSpec is de draagbare applicatiespecificatie. Stateware is
+> de bredere softwarecategorie en State-Centric Engineering is de methode om ze
+> te bouwen. `StateDD` blijft een oude compatibiliteitsnaam in bestaande
+> repopaden, schema's en links.
 
 ## Samenvatting in één zin
 
-StateDD houdt de huidige status, beslissingen, backlog, validatiebewijs en sessieoverdracht van je project in dezelfde Git-repo waar de agent werkt, zodat de repo altijd de enige bron van waarheid is.
+StateSpec houdt de huidige status, beslissingen, backlog, validatiebewijs en sessieoverdracht van je project in dezelfde Git-repo waar de agent werkt, zodat de repo altijd de enige bron van waarheid is.
 
 ## Wat het doet
 
-StateDD is een repo-first projectworkflow. In plaats van te vertrouwen op een chatthread die onthoudt wat er is gebouwd en waarom, bewaar je de belangrijke projectstatus in platte-tekstbestanden in `~/Projects/study-project`. Jij en je agent lezen en werken dezelfde bestanden bij, dus elke sessie start vanuit de werkelijke huidige status.
+StateSpec definieert de draagbare bestanden, eigendomsregels,
+levenscycluscontracten, contextopbouw, validatie en bewijsvereisten voor een
+Stateware-applicatie. State-Centric Engineering is de praktijk die deze
+contracten toepast. In plaats van te vertrouwen op een chatthread die onthoudt
+wat er is gebouwd en waarom, bewaar je de belangrijke projectstatus in
+platte-tekstbestanden in `~/Projects/study-project`. Jij en je agent lezen en
+werken dezelfde bestanden bij, dus elke sessie start vanuit de werkelijke
+huidige status.
 
 De bestandsset is:
 
@@ -24,7 +36,7 @@ De agent leest deze bestanden aan het begin van een sessie, stelt wijzigingen vo
 
 ## Wanneer je het gebruikt
 
-Gebruik StateDD als je de agent code wilt laten bouwen of wijzigen over meer dan één sessie:
+Gebruik StateSpec als je de agent code wilt laten bouwen of wijzigen over meer dan één sessie:
 
 - Een kleine applicatie of script bouwen.
 - Refactoren of features toevoegen aan een bestaand project.
@@ -55,7 +67,7 @@ Deze handleiding gebruikt `lenny` als gebruikersnaam op `studybox` en `student-p
 
    `mkdir -p` maakt bovenliggende mappen aan als dat nodig is. De map `docs/` bevat de evidence-log en `evidence/` bevat de daadwerkelijke bewijsbestanden.
 
-2. Maak de StateDD-bestanden aan:
+2. Maak de StateSpec-bestanden aan:
 
    ```bash
    touch AGENTS.md STATUS.md PROJECT_STATE.yaml PROJECT_DNA.yaml NEXT_ACTIONS.md BACKLOG.md WORKLOG.md docs/EVIDENCE_LOG.md
@@ -69,7 +81,7 @@ Deze handleiding gebruikt `lenny` als gebruikersnaam op `studybox` en `student-p
    git init
    ```
 
-   `git init` maakt een nieuwe Git-repository in de huidige map zodat wijzigingen in de StateDD-bestanden kunnen worden bijgehouden.
+   `git init` maakt een nieuwe Git-repository in de huidige map zodat wijzigingen in de StateSpec-bestanden kunnen worden bijgehouden.
 
 4. Voeg de bestanden toe aan Git en controleer de status:
 
@@ -78,7 +90,7 @@ Deze handleiding gebruikt `lenny` als gebruikersnaam op `studybox` en `student-p
    git status
    ```
 
-   Je zou de StateDD-bestanden en -mappen moeten zien als "new file" of "Changes to be committed".
+   Je zou de StateSpec-bestanden en -mappen moeten zien als "new file" of "Changes to be committed".
 
 5. Controleer dat de bestanden er echt zijn:
 
@@ -91,7 +103,7 @@ Deze handleiding gebruikt `lenny` als gebruikersnaam op `studybox` en `student-p
 
 ## Je eerste echte workflow
 
-Doel: gebruik StateDD om een kleine feature toe te voegen aan `~/Projects/study-project`.
+Doel: gebruik StateSpec om een kleine feature toe te voegen aan `~/Projects/study-project`.
 
 ### 1. Maak de projectrepo
 
@@ -194,11 +206,11 @@ Als het bewijs er goed uitziet, werk je `STATUS.md` bij:
 
 Maak `NEXT_ACTIONS.md` leeg of werk het bij zodat het naar de volgende taak uit de backlog wijst.
 
-Dat is de StateDD-lus: **maak een projectrepo → maak een taak aan → laat de agent een voorstel doen → valideer → sluit af**.
+Dat is de StateSpec-lus: **maak een projectrepo → maak een taak aan → laat de agent een voorstel doen → valideer → sluit af**.
 
 ## Veelvoorkomende problemen en oplossingen
 
-De oplossingen hieronder zijn gebaseerd op veelvoorkomende StateDD-praktijk. Ik heb ze niet allemaal op deze machine getest.
+De oplossingen hieronder zijn gebaseerd op veelvoorkomende StateSpec-praktijk. Ik heb ze niet allemaal op deze machine getest.
 
 | Symptoom | Oorzaak | Oplossing |
 | --- | --- | --- |
@@ -207,7 +219,7 @@ De oplossingen hieronder zijn gebaseerd op veelvoorkomende StateDD-praktijk. Ik 
 | `STATUS.md` toont taken die al afgerond zijn | `STATUS.md` is niet bijgewerkt na validatie | Werk `STATUS.md` bij zodra je het bewijs accepteert. |
 | De agent begint al aan een backlog-taak voordat de actieve taak is gesloten | `NEXT_ACTIONS.md` of `BACKLOG.md` is onduidelijk | Wijs de agent aan het begin van de sessie terug naar `STATUS.md` en `NEXT_ACTIONS.md`. |
 | `PROJECT_DNA.yaml` verandert elke sessie | De agent behandelt projectfeiten als werknotities | Voeg een regel toe dat alleen jij `PROJECT_DNA.yaml` mag bewerken, en houd DNA-feiten stabiel. |
-| `git status` toont veel niet-getraceerde StateDD-bestanden | Je hebt de bestanden aangemaakt maar nooit toegevoegd | Voer `git add .` uit en commit aan het einde van een sessie. |
+| `git status` toont veel niet-getraceerde StateSpec-bestanden | Je hebt de bestanden aangemaakt maar nooit toegevoegd | Voer `git add .` uit en commit aan het einde van een sessie. |
 | Bewerkingen op de telefoon zien er goed uit maar breken de YAML- of Markdown-opmaak | Virtuele toetsenborden en autocorrectie veranderen tekens | Gebruik een platte-teksteditor op `student-phone`, schakel autocorrectie uit, of doe laatste bewerkingen op `studybox`. |
 | De agent herschrijft `PROJECT_STATE.yaml` om zijn eigen bewering te bevestigen | `AGENTS.md` staat toe dat hij statusbestanden vrij bijwerkt | Voeg "Ask before editing STATUS.md, PROJECT_STATE.yaml, or NEXT_ACTIONS.md" toe en bekijk diffs voordat je goedkeurt. |
 
@@ -218,9 +230,9 @@ De oplossingen hieronder zijn gebaseerd op veelvoorkomende StateDD-praktijk. Ik 
 
     - Houd de regel in `AGENTS.md` dat de agent taken niet zonder bewijs mag afsluiten.
     - Lees elk bewijsstuk voordat je `STATUS.md` of `NEXT_ACTIONS.md` bijwerkt.
-    - Laat de agent StateDD-bestanden nooit herschrijven om alleen zijn eigen bewering te bevestigen.
+    - Laat de agent StateSpec-bestanden nooit herschrijven om alleen zijn eigen bewering te bevestigen.
     - Push de repo regelmatig naar een remote of maak back-ups, vooral voor een lange pauze.
-    - Houd geheimen, tokens en wachtwoorden uit alle StateDD-bestanden en bewijsscreenshots.
+    - Houd geheimen, tokens en wachtwoorden uit alle StateSpec-bestanden en bewijsscreenshots.
     - Behandel het voorstel van de agent als een voorstel, niet als de definitieve beslissing.
 
 ## Telefoon vs laptop
@@ -238,5 +250,5 @@ Behandel de telefoon als een statuschecker. Doe het belangrijkste plannen, valid
 
 ## Wat je verder kunt lezen
 
-- Lees de [StudyDD-handleiding](studydd.nl.md) om leeronderwerpen op dezelfde repo-first manier te beheren.
+- Lees de [StudyState-handleiding](studydd.nl.md) om leeronderwerpen op dezelfde repo-first manier te beheren.
 - Lees de [Veiligheidsgrenzen-pagina](../safety/boundaries.nl.md) voor regels die jou en je gegevens beschermen terwijl je een AI-agent gebruikt.

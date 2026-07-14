@@ -288,4 +288,4 @@ Gebruik je telefoon voor snelle controles en kleine goedkeuringen. Doe installat
 ## Wat je verder kunt lezen
 
 - [Herdr-handleiding](../guides/herdr.nl.md) — laat agentsessies op `studybox` draaien en verbind veilig opnieuw vanaf `student-phone`.
-- [StateDD-handleiding](../guides/statedd.nl.md) — houd plannen, status en bewijs in de repo zodat de agent altijd vanuit de waarheid start.
+- [StateSpec-handleiding](../guides/statedd.nl.md) — houd plannen, status en bewijs in de repo zodat de agent altijd vanuit de waarheid start.

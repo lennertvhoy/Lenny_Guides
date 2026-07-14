@@ -1,12 +1,23 @@
-# StateDD
+# StateSpec
+
+> **Naming:** StateSpec is the portable application specification. Stateware is
+> the broader software category, and State-Centric Engineering is the method
+> used to build it. `StateDD` remains a legacy compatibility name in existing
+> repository paths, schemas, and links.
 
 ## One-line summary
 
-StateDD keeps your project's current status, decisions, backlog, validation evidence, and session handoffs inside the same Git repo where the agent works, so the repo is always the single source of truth.
+StateSpec keeps your project's current status, decisions, backlog, validation evidence, and session handoffs inside the same Git repo where the agent works, so the repo is always the single source of truth.
 
 ## What it does
 
-StateDD is a repo-first project workflow. Instead of trusting a chat thread to remember what was built and why, you store the important project state in plain-text files inside `~/Projects/study-project`. You and the agent both read and update the same files, so every session starts from the actual current state.
+StateSpec defines the portable files, ownership rules, lifecycle contracts,
+context compilation, validation, and evidence requirements for a Stateware
+application. State-Centric Engineering is the practice of applying those
+contracts. Instead of trusting a chat thread to remember what was built and why,
+you store the important project state in plain-text files inside
+`~/Projects/study-project`. You and the agent both read and update the same
+files, so every session starts from the actual current state.
 
 The file set is:
 
@@ -24,7 +35,7 @@ The agent reads these files at the start of a session, proposes changes, and upd
 
 ## When to use it
 
-Use StateDD when you want the agent to build or change code over more than one session:
+Use StateSpec when you want the agent to build or change code over more than one session:
 
 - Building a small application or script.
 - Refactoring or adding features to an existing project.
@@ -55,7 +66,7 @@ This guide uses `lenny` as the username on `studybox` and `student-phone` as you
 
    `mkdir -p` creates parent directories as needed. The `docs/` folder will hold the evidence log, and `evidence/` will hold the actual proof files.
 
-2. Create the StateDD files:
+2. Create the StateSpec files:
 
    ```bash
    touch AGENTS.md STATUS.md PROJECT_STATE.yaml PROJECT_DNA.yaml NEXT_ACTIONS.md BACKLOG.md WORKLOG.md docs/EVIDENCE_LOG.md
@@ -69,7 +80,7 @@ This guide uses `lenny` as the username on `studybox` and `student-phone` as you
    git init
    ```
 
-   `git init` creates a new Git repository in the current directory so changes to the StateDD files can be tracked.
+   `git init` creates a new Git repository in the current directory so changes to the StateSpec files can be tracked.
 
 4. Add the files to Git and check the status:
 
@@ -78,7 +89,7 @@ This guide uses `lenny` as the username on `studybox` and `student-phone` as you
    git status
    ```
 
-   You should see the StateDD files and directories listed as "new file" or "Changes to be committed".
+   You should see the StateSpec files and directories listed as "new file" or "Changes to be committed".
 
 5. Verify the files are really there:
 
@@ -91,7 +102,7 @@ This guide uses `lenny` as the username on `studybox` and `student-phone` as you
 
 ## Your first real workflow
 
-Goal: use StateDD to add a small feature to `~/Projects/study-project`.
+Goal: use StateSpec to add a small feature to `~/Projects/study-project`.
 
 ### 1. Create the project repo
 
@@ -194,11 +205,11 @@ When the evidence looks good, update `STATUS.md`:
 
 Clear or update `NEXT_ACTIONS.md` to point at the next task from the backlog.
 
-That is the StateDD loop: **create a project repo → file a task → let the agent propose → validate → close**.
+That is the StateSpec loop: **create a project repo → file a task → let the agent propose → validate → close**.
 
 ## Common problems and fixes
 
-The fixes below are based on common StateDD practice. I have not tested each one on this machine.
+The fixes below are based on common StateSpec practice. I have not tested each one on this machine.
 
 | Symptom | Cause | Fix |
 | --- | --- | --- |
@@ -207,7 +218,7 @@ The fixes below are based on common StateDD practice. I have not tested each one
 | `STATUS.md` shows tasks that were already finished | `STATUS.md` was not updated after validation | Update `STATUS.md` as soon as you accept the evidence. |
 | The agent drifts to a backlog task before the active task is closed | `NEXT_ACTIONS.md` or `BACKLOG.md` is unclear | Point the agent back to `STATUS.md` and `NEXT_ACTIONS.md` at the start of the session. |
 | `PROJECT_DNA.yaml` keeps changing every session | The agent treats project facts as working notes | Add a rule that only you may edit `PROJECT_DNA.yaml`, and keep DNA facts stable. |
-| `git status` shows many untracked StateDD files | You created the files but never added them | Run `git add .` and commit when a session ends. |
+| `git status` shows many untracked StateSpec files | You created the files but never added them | Run `git add .` and commit when a session ends. |
 | Phone edits look fine but break YAML or Markdown formatting | Virtual keyboards and auto-correct change characters | Use a plain-text editor on `student-phone`, disable auto-correct, or do final edits on `studybox`. |
 | The agent rewrites `PROJECT_STATE.yaml` to match its own claim | `AGENTS.md` allows it to update state files freely | Add "Ask before editing STATUS.md, PROJECT_STATE.yaml, or NEXT_ACTIONS.md" and review diffs before approving. |
 
@@ -218,9 +229,9 @@ The fixes below are based on common StateDD practice. I have not tested each one
 
     - Keep the rule in `AGENTS.md` that the agent cannot close tasks without evidence.
     - Read every piece of evidence before you update `STATUS.md` or `NEXT_ACTIONS.md`.
-    - Never let the agent rewrite StateDD files just to match its own claim.
+    - Never let the agent rewrite StateSpec files just to match its own claim.
     - Push the repo to a remote or back it up regularly, especially before a long break.
-    - Keep secrets, tokens, and passwords out of all StateDD files and evidence screenshots.
+    - Keep secrets, tokens, and passwords out of all StateSpec files and evidence screenshots.
     - Treat the agent's proposal as a proposal, not as the final decision.
 
 ## Phone vs laptop
@@ -238,5 +249,5 @@ Treat the phone as a status checker. Do the main planning, validation, evidence 
 
 ## What to read next
 
-- Read the [StudyDD guide](studydd.md) to manage learning topics the same repo-first way.
+- Read the [StudyState guide](studydd.md) to manage learning topics the same repo-first way.
 - Read the [Safety Boundaries page](../safety/boundaries.md) for rules that protect you and your data while using an AI agent.

@@ -1,6 +1,6 @@
 # Lenny_Guides Status
 
-**Updated At:** 2026-07-06T20:48:10Z
+**Updated At:** 2026-07-14T00:00:00Z
 **Mode:** operating
 **Goal:** Public bilingual guides site on GitHub Pages.
 
@@ -14,13 +14,15 @@
 - Local build verified: `mkdocs build --strict` exits 0 with no warnings.
 - Site skeleton, landing pages, student-setup guide, safety page, and guide stubs are in `docs/`.
 - English and Dutch versions are generated under `site/` and `site/nl/`.
-- Topic guides (Herdr, Tailscale, Termux, StudyDD, StateDD) and the safety boundaries page have been rewritten to full depth with troubleshooting tables.
+- Topic guides (Herdr, Tailscale, Termux, StudyState, StateSpec) and the safety boundaries page have been rewritten to full depth with troubleshooting tables.
 - Theme: cozy Catppuccin Mocha base with Dracula accents; dark mode by default.
+- Public naming uses Stateware, State-Centric Engineering, StateSpec,
+  StudyState, and ClassState while stable legacy guide URLs remain compatible.
 
 ## Product Truth
 
 - Site is published at https://lennertvhoy.github.io/Lenny_Guides/.
-- First guide: student setup for Herdr, Tailscale, Termux, StudyDD, StateDD.
+- First guide: student setup for Herdr, Tailscale, Termux, StudyState, StateSpec.
 
 ## Runtime Truth
 

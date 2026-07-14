@@ -10,15 +10,16 @@ Each guide explains **why** a step matters, not just **what** to type. We prefer
 
 ## Start here
 
-- [Student setup](./getting-started/student-setup.md) — Build a safe, mobile-friendly workspace with Herdr, Tailscale, Termux, StudyDD, and StateDD.
+- [Student setup](./getting-started/student-setup.md) — Build a safe, mobile-friendly workspace with Herdr, Tailscale, Termux, StudyState, and StateSpec.
 
 ## Browse guides
 
 - [Herdr](./guides/herdr.md) — persistent terminal workspace for agents. Start here if you want long-running agent sessions.
 - [Tailscale](./guides/tailscale.md) — private mesh network. Start here if you want your phone to reach your host safely.
 - [Termux](./guides/termux.md) — terminal on Android. Start here if you want SSH and Git on your phone.
-- [StudyDD](./guides/studydd.md) — repo-first learning workflow. Start here if you are using an AI tutor to learn a topic.
-- [StateDD](./guides/statedd.md) — repo-first project workflow. Start here if an AI agent is writing code for your project.
+- [StudyState](./guides/studydd.md) — repo-first learning workflow. Start here if you are using an AI tutor to learn a topic.
+- [StateSpec](./guides/statedd.md) — repo-first project workflow. Start here if an AI agent is writing code for your project.
+- [Stateware naming](./guides/naming.md) — understand the category, engineering method, portable specification, and compatibility names.
 
 ## Safety first
 

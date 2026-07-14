@@ -10,15 +10,16 @@ Elke gids legt uit **waarom** een stap belangrijk is, niet alleen **wat** je moe
 
 ## Start hier
 
-- [Studentenopzet](./getting-started/student-setup.nl.md) — Bouw een veilige, mobielvriendelijke werkplek met Herdr, Tailscale, Termux, StudyDD en StateDD.
+- [Studentenopzet](./getting-started/student-setup.nl.md) — Bouw een veilige, mobielvriendelijke werkplek met Herdr, Tailscale, Termux, StudyState en StateSpec.
 
 ## Gidsen
 
 - [Herdr](./guides/herdr.nl.md) — blijvende terminalwerkruimte voor agents. Start hier als je lange agentsessies wilt draaien.
 - [Tailscale](./guides/tailscale.nl.md) — privé mesh-netwerk. Start hier als je je telefoon veilig naar je host wilt laten verbinden.
 - [Termux](./guides/termux.nl.md) — terminal op Android. Start hier als je SSH en Git op je telefoon wilt.
-- [StudyDD](./guides/studydd.nl.md) — repo-first leerworkflow. Start hier als je een AI-tutor gebruikt om een onderwerp te leren.
-- [StateDD](./guides/statedd.nl.md) — repo-first projectworkflow. Start hier als een AI-agent code voor je project schrijft.
+- [StudyState](./guides/studydd.nl.md) — repo-first leerworkflow. Start hier als je een AI-tutor gebruikt om een onderwerp te leren.
+- [StateSpec](./guides/statedd.nl.md) — repo-first projectworkflow. Start hier als een AI-agent code voor je project schrijft.
+- [Stateware-naamgeving](./guides/naming.nl.md) — begrijp de categorie, engineeringmethode, draagbare specificatie en compatibiliteitsnamen.
 
 ## Veiligheid eerst
 

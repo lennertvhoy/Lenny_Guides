@@ -1,12 +1,16 @@
-# StudyDD
+# StudyState
+
+> **Naamgeving:** StudyState is de leerapplicatie/-template. Bestaande
+> repositories, paden, omgevingsvariabelen en schema's kunnen nog de oude
+> compatibiliteitsnaam `StudyDD` gebruiken.
 
 ## Samenvatting in één zin
 
-StudyDD houdt je leeronderwerp, bronnen, zwakke punten, herhalingsschema en bewijs van begrip in dezelfde Git-repo waar je agent werkt, zodat er niets verloren gaat tussen sessies.
+StudyState houdt je leeronderwerp, bronnen, zwakke punten, herhalingsschema en bewijs van begrip in dezelfde Git-repo waar je agent werkt, zodat er niets verloren gaat tussen sessies.
 
 ## Wat het doet
 
-StudyDD is een repo-first leerworkflow. In plaats van aantekeningen te verspreiden over chatthreads, browsertabs en notitieboeken, bewaar je de belangrijke dingen in platte-tekstbestanden in `~/Projects/study-project`. Jij en je agent lezen en werken dezelfde bestanden bij, dus de repo toont altijd de huidige waarheid.
+StudyState is een repo-first leerworkflow. In plaats van aantekeningen te verspreiden over chatthreads, browsertabs en notitieboeken, bewaar je de belangrijke dingen in platte-tekstbestanden in `~/Projects/study-project`. Jij en je agent lezen en werken dezelfde bestanden bij, dus de repo toont altijd de huidige waarheid.
 
 De bestandsset is:
 
@@ -23,7 +27,7 @@ De agent leest deze bestanden aan het begin van een sessie en schrijft alleen up
 
 ## Wanneer je het gebruikt
 
-Gebruik StudyDD als je de agent wilt laten helpen met iets nieuws leren en je de voortgang over dagen of weken wilt bijhouden:
+Gebruik StudyState als je de agent wilt laten helpen met iets nieuws leren en je de voortgang over dagen of weken wilt bijhouden:
 
 - Een nieuwe programmeertaal leren.
 - Een nieuw framework of een nieuwe bibliotheek leren.
@@ -53,7 +57,7 @@ Deze handleiding gebruikt `lenny` als gebruikersnaam op `studybox` en `student-p
 
    `mkdir -p` maakt bovenliggende mappen aan als dat nodig is. De map `evidence/` bevat later quizzes, codevoorbeelden en ander bewijs.
 
-2. Maak de StudyDD-bestanden aan:
+2. Maak de StudyState-bestanden aan:
 
    ```bash
    touch AGENTS.md STATUS.md NEXT_ACTIONS.md BACKLOG.md WORKLOG.md SOURCES.md REVIEW.md evidence/README.md
@@ -74,7 +78,7 @@ Deze handleiding gebruikt `lenny` als gebruikersnaam op `studybox` en `student-p
    git status
    ```
 
-   Je zou de acht StudyDD-bestanden moeten zien als "new file" of "Changes to be committed".
+   Je zou de acht StudyState-bestanden moeten zien als "new file" of "Changes to be committed".
 
 5. Controleer dat de bestanden er echt zijn:
 
@@ -87,7 +91,7 @@ Deze handleiding gebruikt `lenny` als gebruikersnaam op `studybox` en `student-p
 
 ## Je eerste echte workflow
 
-Doel: gebruik StudyDD om **Python dictionaries** te leren in `~/Projects/study-project`.
+Doel: gebruik StudyState om **Python dictionaries** te leren in `~/Projects/study-project`.
 
 ### 1. Maak de leerrepo
 
@@ -201,7 +205,7 @@ None
 
 Maak `NEXT_ACTIONS.md` leeg of laat het naar het volgende onderwerp in `BACKLOG.md` wijzen.
 
-Dat is de StudyDD-loop: **maak een leerrepo → geef de agent de regels → voeg een leeronderwerp toe → schrijf bewijs → herhaal**.
+Dat is de StudyState-loop: **maak een leerrepo → geef de agent de regels → voeg een leeronderwerp toe → schrijf bewijs → herhaal**.
 
 ## Veelvoorkomende problemen en oplossingen
 
@@ -212,7 +216,7 @@ Dat is de StudyDD-loop: **maak een leerrepo → geef de agent de regels → voeg
 | De agent zegt dat een onderwerp beheerst is, maar er is geen bewijs | `REVIEW.md` is door de agent in plaats van door jou bijgewerkt | Lees het bewijs altijd zelf voordat je `REVIEW.md` of `STATUS.md` bijwerkt. |
 | De map `evidence/` is moeilijk te doorzoeken | `evidence/README.md` ontbreekt of is verouderd | Vermeld na elke sessie elk bewijsbestand met een korte beschrijving. |
 | Je vergeet wanneer je een onderwerp moet herhalen | `REVIEW.md` heeft geen volgende-herhaaldatum | Voeg elke keer dat je een herhaling afrondt een regel "Next review" met een datum toe. |
-| `git status` toont veel niet-getraceerde StudyDD-bestanden | Je hebt de bestanden aangemaakt maar nooit toegevoegd | Voer `git add .` uit en commit aan het einde van een sessie. |
+| `git status` toont veel niet-getraceerde StudyState-bestanden | Je hebt de bestanden aangemaakt maar nooit toegevoegd | Voer `git add .` uit en commit aan het einde van een sessie. |
 | Bewerkingen op de telefoon zien er goed uit maar breken de Markdown-opmaak | Virtuele toetsenborden en autocorrectie veranderen tekens | Gebruik een platte-teksteditor op `student-phone`, schakel autocorrectie uit, of doe laatste bewerkingen op `studybox` (niet geverifieerd). |
 | De agent raakt van het onderwerp af | `NEXT_ACTIONS.md` of `BACKLOG.md` is onduidelijk | Wijs de agent aan het begin van de sessie terug naar `STATUS.md` en `NEXT_ACTIONS.md` (niet geverifieerd). |
 
@@ -242,5 +246,5 @@ Behandel de telefoon als een herhalingspartner. Doe het belangrijkste leren, het
 
 ## Wat je verder kunt lezen
 
-- Lees de [StateDD-handleiding](statedd.nl.md) om op dezelfde repo-first manier hele projecten te beheren.
+- Lees de [StateSpec-handleiding](statedd.nl.md) om op dezelfde repo-first manier hele projecten te beheren.
 - Lees de [Veiligheidsgrenzen-pagina](../safety/boundaries.nl.md) voor regels die jou en je gegevens beschermen terwijl je een AI-agent gebruikt.

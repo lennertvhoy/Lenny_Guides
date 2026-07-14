@@ -21,4 +21,10 @@ Build and publish the first version of Lenny_Guides.
 - ~~LG-CONTENT-005~~ Herdr-specific troubleshooting expansion (done)
 - ~~LG-CONTENT-006~~ Termux Android troubleshooting expansion (done)
 - ~~LG-CONTENT-007~~ Safe AI-agent workflow examples (done)
-- LG-CONTENT-008 StateDD template download/setup path
+- LG-CONTENT-008 StateSpec template download/setup path
+
+## Completed compatibility work
+
+- LG-NAMING-001 Adopt Stateware, State-Centric Engineering, StateSpec,
+  StudyState, and ClassState in current public content while retaining stable
+  legacy URLs and historical records.

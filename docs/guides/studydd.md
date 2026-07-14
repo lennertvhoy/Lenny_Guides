@@ -1,12 +1,16 @@
-# StudyDD
+# StudyState
+
+> **Naming:** StudyState is the learning application/template. Existing
+> repositories, paths, environment variables, and schemas may still use the
+> legacy `StudyDD` compatibility identifier.
 
 ## One-line summary
 
-StudyDD keeps your learning topic, sources, weak points, review schedule, and proof of understanding inside the same Git repo where your agent works, so nothing is lost between sessions.
+StudyState keeps your learning topic, sources, weak points, review schedule, and proof of understanding inside the same Git repo where your agent works, so nothing is lost between sessions.
 
 ## What it does
 
-StudyDD is a repo-first learning workflow. Instead of scattering notes across chat threads, browser tabs, and notebooks, you store the important parts in plain-text files inside `~/Projects/study-project`. You and your agent both read and update the same files, so the repo always shows the current truth.
+StudyState is a repo-first learning workflow. Instead of scattering notes across chat threads, browser tabs, and notebooks, you store the important parts in plain-text files inside `~/Projects/study-project`. You and your agent both read and update the same files, so the repo always shows the current truth.
 
 The file set is:
 
@@ -23,7 +27,7 @@ The agent reads these files at the start of a session and writes updates only to
 
 ## When to use it
 
-Use StudyDD when you want the agent to help you learn something new and you need to keep track of progress over days or weeks:
+Use StudyState when you want the agent to help you learn something new and you need to keep track of progress over days or weeks:
 
 - Learning a new programming language.
 - Learning a new framework or library.
@@ -53,7 +57,7 @@ This guide uses `lenny` as the username on `studybox` and `student-phone` as you
 
    `mkdir -p` creates parent directories as needed. The `evidence/` folder will hold quizzes, code samples, and other proof.
 
-2. Create the StudyDD files:
+2. Create the StudyState files:
 
    ```bash
    touch AGENTS.md STATUS.md NEXT_ACTIONS.md BACKLOG.md WORKLOG.md SOURCES.md REVIEW.md evidence/README.md
@@ -74,7 +78,7 @@ This guide uses `lenny` as the username on `studybox` and `student-phone` as you
    git status
    ```
 
-   You should see the eight StudyDD files listed as "new file" or "Changes to be committed".
+   You should see the eight StudyState files listed as "new file" or "Changes to be committed".
 
 5. Verify the files are really there:
 
@@ -87,7 +91,7 @@ This guide uses `lenny` as the username on `studybox` and `student-phone` as you
 
 ## Your first real workflow
 
-Goal: use StudyDD to learn **Python dictionaries** in `~/Projects/study-project`.
+Goal: use StudyState to learn **Python dictionaries** in `~/Projects/study-project`.
 
 ### 1. Create the study repo
 
@@ -201,7 +205,7 @@ None
 
 Clear `NEXT_ACTIONS.md` or point it at the next backlog topic.
 
-That is the StudyDD loop: **create a study repo → tell the agent the rules → add a learning topic → write evidence → review**.
+That is the StudyState loop: **create a study repo → tell the agent the rules → add a learning topic → write evidence → review**.
 
 ## Common problems and fixes
 
@@ -212,7 +216,7 @@ That is the StudyDD loop: **create a study repo → tell the agent the rules →
 | The agent says a topic is mastered but there is no proof | `REVIEW.md` was updated by the agent instead of by you | Always review the evidence yourself before updating `REVIEW.md` or `STATUS.md`. |
 | The `evidence/` folder is hard to browse | `evidence/README.md` is missing or stale | List every evidence file with a one-line description after each session. |
 | You forget when to review a topic | `REVIEW.md` has no next-review date | Add a "Next review" line with a date every time you finish a review. |
-| `git status` shows many untracked StudyDD files | You created the files but never added them | Run `git add .` and commit when a session ends. |
+| `git status` shows many untracked StudyState files | You created the files but never added them | Run `git add .` and commit when a session ends. |
 | Phone edits look fine but break Markdown formatting | Virtual keyboards and auto-correct change characters | Use a plain-text editor on `student-phone`, disable auto-correct, or do final edits on `studybox` (unverified). |
 | The agent drifts to a different topic | `NEXT_ACTIONS.md` or `BACKLOG.md` is unclear | Point the agent back to `STATUS.md` and `NEXT_ACTIONS.md` at the start of the session (unverified). |
 
@@ -242,5 +246,5 @@ Treat the phone as a review companion. Do the main learning, evidence writing, a
 
 ## What to read next
 
-- Read the [StateDD guide](statedd.md) to manage whole projects the same repo-first way.
+- Read the [StateSpec guide](statedd.md) to manage whole projects the same repo-first way.
 - Read the [Safety Boundaries page](../safety/boundaries.md) for rules that protect you and your data while using an AI agent.
